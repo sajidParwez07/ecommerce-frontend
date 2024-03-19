@@ -1,0 +1,294 @@
+{
+  "orderlist": [
+    {
+      "orderitem": [
+        {
+          "iteminfo": {
+            "id": 2,
+            "name": "Mango Yellow",
+            "price": 100,
+            "photo": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000",
+            "details": "This is Good Mango for everyone",
+            "isOrderPlaced": true
+          },
+          "cid": 2,
+          "quantity": 2,
+          "totalPrice": 200,
+          "id": 1
+        },
+        {
+          "iteminfo": {
+            "id": 1,
+            "name": "Apple Green",
+            "price": 300,
+            "photo": "https://media.istockphoto.com/id/185262648/photo/red-apple-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUTvQuVPUxUYX1CEj-N3lW5eRFLlkGrU_cwwwOWxOh8=",
+            "details": "This is Good Apple for everyone",
+            "isOrderPlaced": true
+          },
+          "cid": 2,
+          "quantity": 2,
+          "totalPrice": 600,
+          "id": 2
+        }
+      ],
+      "user": {
+        "name": "Sajid",
+        "email": "sajid@gmail.com",
+        "isAdmin": false,
+        "id": 2
+      },
+      "cid": 2,
+      "subTotalCartPrice": 800,
+      "shippingCharges": 100,
+      "TotalAmount": 900,
+      "id": 1
+    },
+    {
+      "orderitem": [
+        {
+          "iteminfo": {
+            "name": "Camera",
+            "price": "111",
+            "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+            "details": "its good!!",
+            "id": 6,
+            "isOrderPlaced": true
+          },
+          "cid": 3,
+          "quantity": 2,
+          "totalPrice": 222,
+          "id": 3
+        },
+        {
+          "iteminfo": {
+            "name": "Pineapple",
+            "price": "45",
+            "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+            "details": "this is good for your health",
+            "id": 5,
+            "isOrderPlaced": true
+          },
+          "cid": 3,
+          "quantity": 2,
+          "totalPrice": 90,
+          "id": 4
+        }
+      ],
+      "user": {
+        "name": "demo",
+        "email": "demo@gmail.com",
+        "isAdmin": false,
+        "id": 3
+      },
+      "cid": 3,
+      "subTotalCartPrice": 312,
+      "shippingCharges": 100,
+      "TotalAmount": 412,
+      "id": 2
+    },
+    {
+      "orderitem": [
+        {
+          "iteminfo": {
+            "name": "Camera",
+            "price": "111",
+            "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+            "details": "its good!!",
+            "id": 6,
+            "isOrderPlaced": true
+          },
+          "cid": 3,
+          "quantity": 2,
+          "totalPrice": 222,
+          "id": 3
+        },
+        {
+          "iteminfo": {
+            "name": "Pineapple",
+            "price": "45",
+            "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+            "details": "this is good for your health",
+            "id": 5,
+            "isOrderPlaced": true
+          },
+          "cid": 3,
+          "quantity": 3,
+          "totalPrice": 135,
+          "id": 4
+        }
+      ],
+      "user": {
+        "name": "demo",
+        "email": "demo@gmail.com",
+        "isAdmin": false,
+        "id": 3
+      },
+      "cid": 3,
+      "subTotalCartPrice": 357,
+      "shippingCharges": 100,
+      "TotalAmount": 457,
+      "id": 3
+    },
+    {
+      "orderitem": [
+        {
+          "iteminfo": {
+            "name": "Pineapple",
+            "price": "45",
+            "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+            "details": "this is good for your health",
+            "id": 5,
+            "productQty": 10,
+            "isOrderPlaced": true
+          },
+          "cid": 2,
+          "quantity": 2,
+          "totalPrice": 90,
+          "id": 8
+        }
+      ],
+      "user": {
+        "name": "Sajid",
+        "email": "sajid@gmail.com",
+        "isAdmin": false,
+        "id": 2
+      },
+      "cid": 2,
+      "subTotalCartPrice": 90,
+      "shippingCharges": 100,
+      "TotalAmount": 190,
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "iteminfo": {
+        "name": "Camera",
+        "price": "111",
+        "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+        "details": "its good!!",
+        "id": 6
+      },
+      "cid": 3,
+      "quantity": 2,
+      "totalPrice": 222,
+      "id": 3
+    },
+    {
+      "iteminfo": {
+        "name": "Pineapple",
+        "price": "45",
+        "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+        "details": "this is good for your health",
+        "id": 5
+      },
+      "cid": 3,
+      "quantity": 3,
+      "totalPrice": 135,
+      "id": 4
+    },
+    {
+      "iteminfo": {
+        "id": 1,
+        "name": "Apple Green",
+        "price": 300,
+        "photo": "https://media.istockphoto.com/id/185262648/photo/red-apple-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUTvQuVPUxUYX1CEj-N3lW5eRFLlkGrU_cwwwOWxOh8=",
+        "details": "This is Good Apple for everyone"
+      },
+      "quantity": 1,
+      "totalPrice": 300,
+      "id": 6
+    },
+    {
+      "iteminfo": {
+        "name": "Camera",
+        "price": "111",
+        "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+        "details": "its good!!",
+        "id": 6,
+        "productQty": 30
+      },
+      "quantity": 1,
+      "totalPrice": 111,
+      "id": 7
+    },
+    {
+      "iteminfo": {
+        "name": "Pineapple",
+        "price": "45",
+        "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+        "details": "this is good for your health",
+        "id": 5,
+        "productQty": 10
+      },
+      "cid": 2,
+      "quantity": 2,
+      "totalPrice": 90,
+      "id": 8
+    }
+  ],
+  "account": [
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "id": 1,
+      "isAdmin": true
+    },
+    {
+      "name": "Sajid",
+      "email": "sajid@gmail.com",
+      "password": "123",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "password": "123",
+      "isAdmin": false,
+      "id": 3
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Apple Green",
+      "price": 300,
+      "photo": "https://media.istockphoto.com/id/185262648/photo/red-apple-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUTvQuVPUxUYX1CEj-N3lW5eRFLlkGrU_cwwwOWxOh8=",
+      "details": "This is Good Apple for everyone"
+    },
+    {
+      "id": 2,
+      "name": "Mango Yellow",
+      "price": 100,
+      "photo": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000",
+      "details": "This is Good Mango for everyone",
+      "productQty": 40
+    },
+    {
+      "name": "Orange",
+      "price": "50",
+      "photo": "https://5.imimg.com/data5/SELLER/Default/2020/9/RI/WF/GL/106270270/orange-500x500.jpg",
+      "details": "Yummy",
+      "id": 4,
+      "productQty": 40
+    },
+    {
+      "name": "Pineapple",
+      "price": "45",
+      "photo": "https://www.healthxchange.sg/sites/hexassets/Assets/food-nutrition/pineapple-health-benefits-and-ways-to-enjoy.jpg",
+      "details": "this is good for your health",
+      "id": 5,
+      "productQty": 10
+    },
+    {
+      "name": "Camera",
+      "price": "111",
+      "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+      "details": "its good!!",
+      "id": 6,
+      "productQty": 30
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+<!-- import React, { useEffect, useState } from "react";
+import AdminHeader from "./adminheader";
+
+const MyOrder = () => {
+
+    let [order, updateOrder] = useState([]);
+    let [orderdetails, updateOrderdetails] = useState([]);
+
+    const getOrder = () => {
+        fetch("http://localhost:1234/orderlist")
+            .then(response => response.json())
+            .then(orderArray => {
+                updateOrder(orderArray.reverse()); // reverse used to display the last item in first
+                updateOrderdetails(orderArray[0].orderitem);
+            })
+    }
+    useEffect(() => {
+        getOrder();
+    }, [1]);
+
+    const seeOrder = (index) => {
+        updateOrderdetails(order[index].orderitem);
+    }
+
+    return (
+        <>
+            <AdminHeader />
+            <div className="container mt-4">
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <h3 className="text-success">Total Orders {order.length} </h3>
+                    </div>
+                </div>
+
+                <div className="row mb-5 border-bottom">
+                    <div className="col-lg-3">
+                        {
+                            order.map((myorder, index) => {
+                                return (
+                                    <div key={index} className="p-3 mb-4 border rounded"
+                                    onClick={seeOrder.bind(this,index)}>
+                                        <h6 className="text-danger"> Customer Details </h6>
+                                        <p>{myorder.fullname}</p>
+                                        <p>{myorder.mobile}</p>
+                                        <p>{myorder.email}</p>
+                                        <p>{myorder.address}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className="col-lg-9">
+                        <h6 className="text-center text-danger"> Order Item </h6>
+                        <table className="table table-bordered shadow rounded text-center">
+                            <thead>
+                                <tr className="bg-light text-primary">
+                                    <th> Product Name </th>
+                                    <th> Product Price </th>
+                                    <th> Product Photo </th>
+                                    <th> Product Quantity </th>
+                                    <th> total Price </th>
+                                    <th> Net Amount </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    orderdetails.map((pdata, index) => {
+                                        return (
+                                            <tr key={index}>
+                                                <td> {pdata.iteminfo.name} </td>
+                                                <td> {pdata.iteminfo.price} </td>
+                                                <td><img src={pdata.iteminfo.photo} height="50" width="60" /></td>
+                                                <td>{pdata.quantity}</td>
+                                                <td>{pdata.totalPrice}</td>
+                                                <td></td>
+                                            </tr>
+                                        )
+                                    })
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </>
+    )
+
+}
+export default MyOrder; -->
+
+
+
+<!-- {
+    "fullname": "sajid",
+    "mobile": "9931996604",
+    "email": "sajidparwez900@gmail.com",
+    "address": "Pisoli, Pune",
+    "orderitem": [
+      {
+        "iteminfo": {
+          "id": 1,
+          "name": "Apple Green",
+          "price": 300,
+          "photo": "https://media.istockphoto.com/id/185262648/photo/red-apple-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUTvQuVPUxUYX1CEj-N3lW5eRFLlkGrU_cwwwOWxOh8=",
+          "details": "This is Good Apple for everyone"
+        },
+        "cid": 2,
+        "quantity": 3,
+        "totalPrice": 900,
+        "id": 1
+      },
+      {
+        "iteminfo": {
+          "id": 2,
+          "name": "Mango Yellow",
+          "price": 100,
+          "photo": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000",
+          "details": "This is Good Mango for everyone"
+        },
+        "cid": 2,
+        "quantity": 2,
+        "totalPrice": 200,
+        "id": 2
+      }
+    ],
+    "netAmount":1200,
+    "id": 1
+  } -->
+
+
+
+
+
+  <!-- {
+    "orderitem": [
+      {
+        "iteminfo": {
+          "id": 2,
+          "name": "Mango Yellow",
+          "price": 100,
+          "photo": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg?w=2000",
+          "details": "This is Good Mango for everyone"
+        },
+        "cid": 2,
+        "quantity": 1,
+        "totalPrice": 100,
+        "id": 1
+      },
+      {
+        "iteminfo": {
+          "name": "Orange",
+          "price": "50",
+          "photo": "https://5.imimg.com/data5/SELLER/Default/2020/9/RI/WF/GL/106270270/orange-500x500.jpg",
+          "details": "Yummy",
+          "id": 4
+        },
+        "cid": 2,
+        "quantity": 1,
+        "totalPrice": "50",
+        "id": 2
+      }
+    ],
+    "user": {
+      "name": "Sajid",
+      "email": "sajid@gmail.com",
+      "isAdmin": false,
+      "id": 2
+    },
+    "cid": 2,
+    "id": 1
+  },
+  {
+    "orderitem": [
+      {
+        "iteminfo": {
+          "id": 1,
+          "name": "Apple Green",
+          "price": 300,
+          "photo": "https://media.istockphoto.com/id/185262648/photo/red-apple-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gUTvQuVPUxUYX1CEj-N3lW5eRFLlkGrU_cwwwOWxOh8=",
+          "details": "This is Good Apple for everyone"
+        },
+        "cid": 3,
+        "quantity": 1,
+        "totalPrice": 300,
+        "id": 3
+      },
+      {
+        "iteminfo": {
+          "name": "check",
+          "price": "111",
+          "photo": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+          "details": "its good!!",
+          "id": 6
+        },
+        "cid": 3,
+        "quantity": 1,
+        "totalPrice": "111",
+        "id": 4
+      }
+    ],
+    "user": {
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "isAdmin": false,
+      "id": 3
+    },
+    "cid": 3,
+    "id": 2
+  } -->
